@@ -1,28 +1,31 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Styles from './common-styles';
+import ColumnItems from './column-items';
+import CLayouts from './common-layous';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.textbold}>Rama 9 in Head</Text>
-      <Text>Rama 9 in Head</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return ( 
+        <View style = { Styles.container } >
+            <Text style = { Styles.TextTainer }>React Native</Text>
+            <Text > Rama 9 in head </Text>
+            <CLayouts/>
+            <StatusBar style = "auto" />
+        </View>
+    );
 }
-
+/*
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#33FFCA',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  textbold:{
-    color: '#FF3333',
-    fontsize: '50',
-    fontWeight: 'bolder',
-
-  }
-});
+    container: {
+        flex: 1,
+        backgroundColor: '#339999',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    textbold:{
+        fomtSize: 20,
+        fontWeight: 'bild',
+        color:'#fff',
+    },
+});*/
